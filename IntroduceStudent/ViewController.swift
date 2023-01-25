@@ -8,7 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var firstNamefield: UITextField!
+    @IBOutlet weak var lastNamefield: UITextField!
+    @IBOutlet weak var schoolNameField: UITextField!
+    @IBOutlet weak var yearSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var numOfPetsLabel: UILabel!
+    @IBOutlet weak var petsStepper: UIStepper!
+    @IBOutlet weak var morePetsSwitch: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
