@@ -93,6 +93,9 @@
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Cge-Lr-LGM">
                                 <rect key="frame" x="270" y="560" width="94" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="stepperDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="9BZ-B5-mpi"/>
+                                </connections>
                             </stepper>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="khC-MX-gTG">
                                 <rect key="frame" x="294" y="609" width="49" height="31"/>
@@ -103,6 +106,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Introduce"/>
+                                <connections>
+                                    <action selector="introduceWasTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fcd-41-L2a"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -113,8 +119,8 @@
                         <outlet property="lastNamefield" destination="0u3-Ne-oE0" id="p8i-tI-n3t"/>
                         <outlet property="morePetsSwitch" destination="khC-MX-gTG" id="qUn-10-pdI"/>
                         <outlet property="numOfPetsLabel" destination="6mY-Oh-LTV" id="5MG-7N-kHB"/>
-                        <outlet property="petsStepper" destination="Cge-Lr-LGM" id="p56-RX-b6s"/>
-                        <outlet property="schoolField" destination="SWt-Rl-ZAi" id="JY7-4q-Gt1"/>
+                        <outlet property="petStepper" destination="Cge-Lr-LGM" id="qIg-5T-8PV"/>
+                        <outlet property="schoolNameField" destination="SWt-Rl-ZAi" id="Rcd-KV-FTT"/>
                         <outlet property="yearSegmentedControl" destination="K0P-49-8wf" id="DTQ-ZZ-Oug"/>
                     </connections>
                 </viewController>
